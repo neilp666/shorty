@@ -1,7 +1,12 @@
-<body>
-    <div class="container">
-        <h1>shortlink app</h1>
-    </div>
-</body>
+<div class="container">
+    <h1>Shorty App <i class="fa fa-link" aria-hidden="true"></i>
+</h1>
+
+     <%= simple_form_for @url, html: { class: "text-center" } do |f| %>
+    <%= f.input :original_url, as: :string, placeholder: "Enter the URL you want to shorten...Shrink Your Links!", label: false %>
+    <%= f.submit "Shorten!", class: "btn btn-danger btn-lg" %>
+    <% end %>
+</div>
+
 
 

@@ -14,16 +14,33 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
-  .container {
-        width:400px;
-        margin:120px auto 0px auto;
+
+ .container {
+    width:400px;
+    margin:120px auto 0px auto;
     }
-    h1 {
-        width:400px;
-        margin-bottom:12px;
-        text-align:center;
-        color:#ff4b33;
-        font-size:40px;
-        padding-bottom:8px;
-        border-bottom:2px solid #ff4b33;
+
+  h1 {
+    width:400px;
+    margin-bottom:12px;
+    text-align:center;
+    color:#C9302C;
+    font-size:40px;
+    padding-bottom:8px; 
+    border-bottom:2px solid #ff4b33;
+}
+
+  p {
+    text-align:center;
+    color:#ff4b33;
+    font-size:20px;
+  }
+
+  form {
+    display:block;
+    width:400px;
+    }
+
+  #submit:hover {
+    background:#ff7866;
     }
