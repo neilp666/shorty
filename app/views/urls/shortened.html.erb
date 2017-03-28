@@ -1,0 +1,8 @@
+<div class="container">
+   <h1>Shorty App <i class="fa fa-link" aria-hidden="true"></i></h1>
+      <h2>Well done, your link has been shortened!</h2>
+      <h2>Your original URL was: <%= @url.original_url %></h2>
+      <h2>Your new URL is <%= @url.short_url %></h2>
+
+      <h3><%= link_to "Try again!" , root_path , class: "btn btn-danger btn-lg btn-block" %>
+</div>
