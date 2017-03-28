@@ -10,8 +10,13 @@ RSpec.describe Url, type: :model do
       expect(@url).to be_valid
     end
 
-    it 'cannot be created with an original_url' do
+    it 'cannot be created without an original_url' do
       @url.original_url = nil
+      expect(@url).to_not be_valid
+    end
+
+    it 'cannot be created with invalid original_url' do
+      @url = Url.create(original_url: 'XYZ')
       expect(@url).to_not be_valid
     end
   end

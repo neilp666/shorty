@@ -9,7 +9,7 @@ describe 'navigate' do
 
     it 'has a title of Url' do
       visit root_path
-      expect(page).to have_content(/URL/)
+      expect(page).to have_content(/Shorty App/)
     end
   end
 end
